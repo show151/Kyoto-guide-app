@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { db } = require('../utils/firebase');
+const { db } = require('../controllers/spotsController');
 
-router.get('/', async (req, res) => {
-  const snapshot = await db.ref('spots').once('value');
-  res.json(snapshot.val());
-});
+router.get('/', getSpots);
 
 module.exports = router;
