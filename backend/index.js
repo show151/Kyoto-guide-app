@@ -3,7 +3,17 @@ const cors = require('cors');
 const spotsRouter = require('./routes/spots');
 
 const app = express();
-app.use(cors());
-app.use('/api/spots', spotsRouter);
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+app.use(cors());
+app.use(express.json());
+
+app.use('/spots', spotsRouter);
+
+app.get("/", (req, res) => {
+  res.send("Kyoto Tour Guide Backend API is running 🚀");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
