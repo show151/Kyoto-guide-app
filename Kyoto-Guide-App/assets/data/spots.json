@@ -1,33 +1,5 @@
 [
   {
-    "name": "観光地名（例：清水寺）",
-    "location": {
-      "latitude": 34.994856,
-      "longitude": 135.785046
-    },
-    "description": "観光地の概要説明。歴史的背景、特徴、人気の理由などを簡潔に書く。",
-    "address": "所在地（例：京都府京都市東山区清水一丁目294）",
-  "category": ["カテゴリ（例：寺院、自然、博物館など）"],
-  "tags": ["history"],
-  "radius": 15,
-  "references": [
-    {
-      "title": "タイトル",
-      "url": "url",
-      "author": "著作者など",
-      "year": "公開年",
-      "note": ""
-    }
-  ],
-  "opening_hours": "営業時間（例：6:00〜18:00）",
-    "entrance_fee": "入場料（例：400円／大人）",
-    "official_website": "公式サイトURL（あれば）",
-    "images": [
-      "画像URL1",
-      "画像URL2"
-    ]
-  },
-  {
     "name": "六孫王神社",
     "location": {
       "latitude": 34.98528,
@@ -392,3 +364,4 @@
     ]
   }
 ]
+
