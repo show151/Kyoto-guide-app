@@ -1,4 +1,10 @@
-// src/services/spots.ts
+/**
+ * spots.ts
+ *
+ * スポットデータ取得専用サービス
+ * - JSONを直接importするのは禁止
+ * - 全員このファイル経由でスポットデータを使う
+ */
 
 import spotsData from '../../assets/data/spots.json';
 import { Spot } from '../types/spot';
