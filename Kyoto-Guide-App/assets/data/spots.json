@@ -310,6 +310,32 @@
     "images": [
         "画像"
     ]
+  },
+  {
+    "name": "竹情荘",
+    "location": {
+      "latitude": 34.97455,
+      "longitude": 135.77325
+    },
+    "description": "京都駅からタクシーで約10分。抹茶や、季節によって変わるお菓子を味わうことができる。絵画教室や茶道教室に参加することもできる(要相談)",
+    "address": "京都府京都市東山区本町15丁目756-2",
+  "category": ["グルメ","体験"],
+  "tags": ["food","experience"],
+  "radius": 15,
+  "references": [
+    {
+      "title": "[竹情荘]",
+      "url": "[http://www.chikujousou.jp/]",
+      "author": "",
+      "year": "",
+      "note": "公式ホームページ"
+    }
+  ],
+  "opening_hours": "10:00~17:00(変更の可能性あり) 休日: 不定休",
+    "entrance_fee": "なし",
+    "images": [
+        "画像"
+    ]
   }
 ]
 
