@@ -8,6 +8,7 @@
  */
 import React from 'react';
 import AppNavigator from './navigation/app-navigator';
+import '../global.css';
 
 export default function App() {
 	return <AppNavigator />;
