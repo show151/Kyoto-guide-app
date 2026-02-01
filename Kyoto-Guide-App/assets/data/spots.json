@@ -1,0 +1,462 @@
+[
+  {
+    "name": "六孫王神社",
+    "location": {
+      "latitude": 34.98528,
+      "longitude": 135.74489
+    },
+    "description": "京都駅より徒歩約15分。毎年体育の日には例祭(宝永祭)が行われる。春には藤や牡丹などの美しい花を楽しむことができる。",
+    "address": "京都府京都市南区八丈町509 ",
+    "category": [
+      "歴史を感じられる",
+      "自然"
+    ],
+    "tags": [
+      "history",
+      "nature"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[六孫王神社,六孫王神社(@rokuson_shrine)/X]",
+        "url": "[http://www.rokunomiya.ecnet.jp/ ,https://x.com/rokuson_shrine?ref_src=twsrc%5Etfw]",
+        "author": "",
+        "year": "公式サイト: 2004年  X: 2025年",
+        "note": "公式サイト, 公式X"
+      }
+    ],
+    "opening_hours": "24時間営業 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "rokuson.jpg",
+    "audioFile": "voice1-01.m4a"
+  },
+  {
+    "name": "新熊野神社",
+    "location": {
+      "latitude": 34.98529,
+      "longitude": 135.77364
+    },
+    "description": "京都駅より徒歩約25分。6月30日には半年の間に重ねた罪や穢れを取り除くための芽の輪くぐりが行われる。",
+    "address": "京都府東山区今熊野椥ノ森町42 ",
+    "category": [
+      "歴史を感じられる"
+    ],
+    "tags": [
+      "history"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[新熊野神社ホームページ]",
+        "url": "[http://www.imakumanojinja.or.jp/]",
+        "author": "",
+        "year": "",
+        "note": "公式サイト"
+      }
+    ],
+    "opening_hours": "9:00〜17:00 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "imakumano.jpg",
+    "audioFile": "voice1-02.m4a"
+  },
+  {
+    "name": "文子天満宮",
+    "location": {
+      "latitude": 34.99408,
+      "longitude": 135.76152
+    },
+    "description": "京都駅より徒歩約10分。北野天満宮の前進であり、天神信仰発祥の神社である。手作りの文子守りや縁結びね貝守りなどを授与している。",
+    "address": "京都市下京区間之町通花屋町下る天神町400 ",
+    "category": [
+      "歴史を感じられる"
+    ],
+    "tags": [
+      "history"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[文子天満宮|文子天満宮は天神信仰発祥の神社、北野天満宮の前進神社です。]",
+        "url": "[https://ayakotenmangu.or.jp/]",
+        "author": "文子天満宮",
+        "year": "2016年",
+        "note": "公式サイト"
+      }
+    ],
+    "opening_hours": "7:00〜19:00 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "ayakotenmangu.jpg",
+    "audioFile": "voice1-03.m4a"
+  },
+  {
+    "name": "霊明神社",
+    "location": {
+      "latitude": 35.00016,
+      "longitude": 135.78332
+    },
+    "description": "京都駅よりバスで約30分。神道の考え方を学んで祝詞を上げて拝礼する神道体験プログラムが用意されている。",
+    "address": "京都府京都市東山区清閑寺霊山町25 ",
+    "category": [
+      "歴史を感じられる",
+      "体験"
+    ],
+    "tags": [
+      "history",
+      "experience"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[霊明神社について - 霊明神社の公式ウェブサイト]",
+        "url": "[https://www.reimeijinja.org/]",
+        "author": "霊明神社",
+        "year": "",
+        "note": "公式サイト"
+      }
+    ],
+    "opening_hours": "24時間営業 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "reimeijinja.jpg",
+    "audioFile": "voice1-04.m4a"
+  },
+  {
+    "name": "満足稲荷神社",
+    "location": {
+      "latitude": 35.01372,
+      "longitude": 135.79015
+    },
+    "description": "京都駅よりバスで約30分。満足音頭まつりや神幸祭などの祭りが開催される。商売繁盛や出世開運、病気平癒などのご利益があるとされている。",
+    "address": "京都府京都市左京区東大路仁王門下ル東門前町527-1 ",
+    "category": [
+      "歴史を感じられる"
+    ],
+    "tags": [
+      "history"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[京都市左京区の神社 - 満足稲荷神社(京都・東山)]",
+        "url": "[https://www.manzokuinari.com/]",
+        "author": "満足稲荷神社",
+        "year": "",
+        "note": "公式サイト"
+      }
+    ],
+    "opening_hours": "9:00~17:00 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "manzokuinari.jpg",
+    "audioFile": "voice1-05.m4a"
+  },
+  {
+    "name": "日向大神宮",
+    "location": {
+      "latitude": 35.00837,
+      "longitude": 135.79478
+    },
+    "description": "京都駅より電車で約30分、蹴上駅から徒歩約15分。11月下旬には境内の紅葉が見ごろを迎える。桜やつつじなどの花も楽しめる。",
+    "address": "京都府京都市山科区日ノ岡一切経谷町29 ",
+    "category": [
+      "歴史を感じられる",
+      "自然"
+    ],
+    "tags": [
+      "history",
+      "nature"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[日向大神宮]",
+        "url": "[http://himukai.jp/]",
+        "author": "",
+        "year": "",
+        "note": "公式サイト"
+      }
+    ],
+    "opening_hours": "10:00~16:00 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "himukai.jpg",
+    "audioFile": "voice1-06.m4a"
+  },
+  {
+    "name": "おにぎり もぐ",
+    "location": {
+      "latitude": 34.98192,
+      "longitude": 135.75720
+    },
+    "description": "京都駅より徒歩約7分。梅ひじきやくるみ味噌などの様々な具材を使ったおにぎりを楽しめる。",
+    "address": "京都府京都市南区東九条中殿田町11-11 ",
+    "category": [
+      "グルメ",
+      "ショッピング"
+    ],
+    "tags": [
+      "food",
+      "shopping"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[おにぎり もぐ | テイクアウト(@onigiri_mogmogu) - Instagram]",
+        "url": "[https://www.instagram.com/p/DAewx6ITnh1/]",
+        "author": "",
+        "year": "",
+        "note": "公式instagram"
+      }
+    ],
+    "opening_hours": "10:30~16:00 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "audioFile": "voice1-07.m4a"
+  },
+  {
+    "name": "伊藤久右衛門 京都駅前店",
+    "location": {
+      "latitude": 34.98780,
+      "longitude": 135.75821
+    },
+    "description": "京都駅より徒歩約3分。宇治茶や、大福などの抹茶スイーツを楽しむことができる。",
+    "address": "京都府京都市下京区東塩小路町579番地1F ",
+    "category": [
+      "グルメ",
+      "ショッピング"
+    ],
+    "tags": [
+      "food",
+      "shopping"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[京都駅前店:店舗・催事のご案内:京都 宇治 伊藤久右衛門]",
+        "url": "[https://www.itohkyuemon.co.jp/corporate/shop/kyotoekimae/]",
+        "author": "",
+        "year": "",
+        "note": "公式ホームページ"
+      }
+    ],
+    "opening_hours": "10:30~18:30 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "itohkyuemon.jpg",
+    "audioFile": "voice1-08.m4a"
+  },
+  {
+    "name": "京都国立博物館",
+    "location": {
+      "latitude": 34.99075,
+      "longitude": 135.77312
+    },
+    "description": "京都駅から徒歩約20分。様々な仏画や絵巻などの作品が展示されている。特別展も多く開催される。",
+    "address": "京都府京都市東山区茶屋町527",
+    "category": [
+      "歴史を感じられる"
+    ],
+    "tags": [
+      "history"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[京都国立博物館]",
+        "url": "[https://www.kyohaku.go.jp/jp/]",
+        "author": "",
+        "year": "",
+        "note": "公式ホームページ"
+      }
+    ],
+    "opening_hours": "9:30~17:00 金曜日のみ9:30~20:00 入館は閉館30分前まで 月曜日休館 ",
+    "entrance_fee": "一般: 700円 大学生: 350円 高校生以下: 無料 特別展示は別料金 ",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "kyohaku.jpg",
+    "audioFile": "voice1-09.m4a"
+  },
+  {
+    "name": "日の出湯",
+    "location": {
+      "latitude": 34.98168,
+      "longitude": 135.75195
+    },
+    "description": "京都駅から徒歩約12分。通常の浴槽に加えて、ジェット風呂や電気風呂、水風呂が楽しめる。12月ごろにはゆず風呂も楽しむことができる。",
+    "address": "京都府京都市南区西九条唐橋町26-6",
+    "category": [
+      "体験"
+    ],
+    "tags": [
+      "experience"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[日の出湯、レトロなお風呂屋さん]",
+        "url": "[https://www.eonet.ne.jp/~hinodeyu/]",
+        "author": "",
+        "year": "2025年12月19日",
+        "note": "公式ホームページ"
+      }
+    ],
+    "opening_hours": "16:00~23:00 定休日: 毎週木曜日 ",
+    "entrance_fee": "中学生以上: 550円(中学生は学生証提示で400円) 小学生以上: 200円 乳幼児: 100円  ",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "hinodeyu.jpg",
+    "audioFile": "voice1-10.m4a"
+  },
+  {
+    "name": "京都デニム",
+    "location": {
+      "latitude": 34.98784,
+      "longitude": 135.76293
+    },
+    "description": "京都駅から徒歩約5分。伝統工芸を用いた手書き京友禅のデニムのバッグやお守り入れなどを購入できる。また、京友禅染などの「日本の染め」の技術をワークショップ形式で体験することもできる(事前予約制)",
+    "address": "京都府京都市下京区小稲荷町79-3",
+    "category": [
+      "ショッピング",
+      "体験"
+    ],
+    "tags": [
+      "shopping",
+      "experience"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[京都デニム 手描き友禅染めデニムバッグ]",
+        "url": "[https://kyoto-denim.com/]",
+        "author": "",
+        "year": "",
+        "note": "公式ホームページ"
+      }
+    ],
+    "opening_hours": "9:00~17:00 ",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "kyoto-denim.jpg",
+    "audioFile": "voice1-11.m4a"
+  },
+  {
+    "name": "柳原銀行記念資料館",
+    "location": {
+      "latitude": 34.98614,
+      "longitude": 135.76476
+    },
+    "description": "京都駅から徒歩約8分。同和地区の歴史や文化、生活資料などの展示を見ることができる。",
+    "address": "京都府京都市下京区下之町6-3",
+    "category": [
+      "歴史を感じられる"
+    ],
+    "tags": [
+      "history"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[柳原銀行記念資料館(崇仁地区のまちづくり)]",
+        "url": "[http://suujin.org/yanagihara/]",
+        "author": "",
+        "year": "2025年8月10日",
+        "note": "公式ホームページ"
+      }
+    ],
+    "opening_hours": "10:00~16:30 休館日: 月、火曜日、祝日",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "yanagiharaginko.jpg",
+    "audioFile": "voice1-12.m4a"
+  },
+  {
+    "name": "蘇嶐窯",
+    "location": {
+      "latitude": 34.99683,
+      "longitude": 135.77701
+    },
+    "description": "京都駅からバスで約30分。様々な器や、アクセサリーなどを取り扱っている。2026年3月からは陶芸教室が再開される(事前受付が必要)。",
+    "address": "京都府京都市東山区清水4丁目170-22",
+    "category": [
+      "体験",
+      "ショッピング"
+    ],
+    "tags": [
+      "experience",
+      "shopping"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[京都の陶芸工房&ギャラリー|清水焼と小石原焼の融合|蘇嶐窯]",
+        "url": "[https://soryu-gama.com]",
+        "author": "",
+        "year": "2025年",
+        "note": "公式ホームページ"
+      }
+    ],
+    "opening_hours": "10:00~17:00 定休日: 水曜日",
+    "entrance_fee": "なし",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "soryu-gama.jpg",
+    "audioFile": "voice1-13.m4a"
+  },
+  {
+    "name": "京都文化博物館",
+    "location": {
+      "latitude": 34.98780,
+      "longitude": 135.75821
+    },
+    "description": "京都駅より地下鉄と徒歩で約10分。京都の歴史や、様々な企画展示を楽しむことができる。",
+    "address": "京都府京都市中京区高倉通り三条上る東片町623-1",
+    "category": [
+      "歴史を感じられる"
+    ],
+    "tags": [
+      "history"
+    ],
+    "radius": 50,
+    "references": [
+      {
+        "title": "[京都府京都文化博物館-京都の歴史と文化の紹介。京都府京都文化博物館のご利用案内。総合展示、特別展、フィルムシアターでの映画上映、その他の催物の最新情報。京都府京都文化博物館別館(重要文化財・旧日本銀行京都支店)の紹介。]",
+        "url": "[https://www.bunpaku.or.jp/]",
+        "author": "",
+        "year": "",
+        "note": "公式ホームページ"
+      }
+    ],
+    "opening_hours": "総合展示: 10:00~19:30(入場は19:00まで) 特別展: 10:00~18:00(毎週金曜日は夜間会館で19:30まで、入場は30分前まで) 別館: 10:00~19:00",
+    "entrance_fee": "総合展示: 一般500円、大学生400円、それ以下は無料 特別展: 特別展により異なる 別館: 無料",
+    "images": [
+      "画像"
+    ],
+    "thumbnail-img": "kyoto-bunpaku.jpg"
+  }
+]

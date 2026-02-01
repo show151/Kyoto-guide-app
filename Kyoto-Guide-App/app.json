@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Kyoto-Guide-App",
+    "slug": "Kyoto-Guide-App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/kyotoicon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/kyotoicon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/kyotoicon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/images/kyotoicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-audio"
+    ]
+  }
+}
