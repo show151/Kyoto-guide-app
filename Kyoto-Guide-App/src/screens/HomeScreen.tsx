@@ -13,10 +13,16 @@ import { resolveImageSource } from '../services/image-loader';
 type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 type HomeScreenRouteProp = RouteProp<RootStackParamList, 'Home'>;
 
+const MAX_LIST_SPOTS = 60;
+const MAX_MAP_SPOTS = 15;
+
 export const HomeScreen = ({ navigation, route }: { navigation: HomeScreenNavigationProp, route: HomeScreenRouteProp }) => {
   const spots = getAllSpots();
-  const { categories } = route.params || {};
+  const { categories, lat, lng } = route.params || {};
   const { currentLocation } = useLocation();
+
+  // Use route params if available (from SearchScreen), otherwise use currentLocation
+  const searchLocation = lat && lng ? { coords: { latitude: lat, longitude: lng } } : currentLocation;
 
   // Filter spots based on selected categories
   const displayedSpots = useMemo(() => {
@@ -29,44 +35,77 @@ export const HomeScreen = ({ navigation, route }: { navigation: HomeScreenNaviga
   }, [spots, categories]);
 
   const sortedSpots = useMemo(() => {
-    if (!currentLocation) return displayedSpots;
+    if (!searchLocation) return displayedSpots;
 
     return [...displayedSpots].sort((a, b) => {
-      const distanceA = calculateDistance(currentLocation.coords, a.location);
-      const distanceB = calculateDistance(currentLocation.coords, b.location);
-      return distanceA - distanceB;
+      try {
+        // スポットにlocationプロパティがあるか確認
+        if (!a.location || !b.location) {
+          console.warn('Spot missing location property:', a.name, b.name);
+          return 0;
+        }
+        
+        const distanceA = calculateDistance(searchLocation.coords, a.location);
+        const distanceB = calculateDistance(searchLocation.coords, b.location);
+        return distanceA - distanceB;
+      } catch (error) {
+        console.error('Error calculating distance:', error);
+        return 0;
+      }
     });
-  }, [displayedSpots, currentLocation]);
+  }, [displayedSpots, searchLocation]);
+
+  const listSpots = useMemo(() => {
+    if (sortedSpots.length <= MAX_LIST_SPOTS) return sortedSpots;
+    return sortedSpots.slice(0, MAX_LIST_SPOTS);
+  }, [sortedSpots]);
+
+  const mapSpots = useMemo(() => {
+    if (sortedSpots.length <= MAX_MAP_SPOTS) return sortedSpots;
+    return sortedSpots.slice(0, MAX_MAP_SPOTS);
+  }, [sortedSpots]);
 
   const renderItem = ({ item }: { item: Spot }) => {
-    // ローカル画像またはURLから画像ソースを取得
-    const imageSource = resolveImageSource((item as any)['thumbnail-img'] || item.thumbnailImg);
+    try {
+      // ローカル画像またはURLから画像ソースを取得
+      const imageSource = resolveImageSource((item as any)['thumbnail-img'] || item.thumbnailImg);
 
-    return (
-      <TouchableOpacity
-        style={styles.card}
-        onPress={() => navigation.navigate('Detail', { spot: item })}
-        activeOpacity={0.9}
-      >
-        <Image source={imageSource} style={styles.cardImage} />
-        <View style={styles.cardContent}>
-          <Text style={styles.cardTitle}>{item.name}</Text>
-          <Text style={styles.cardLocation} numberOfLines={1}>📍 {item.address}</Text>
-        </View>
-      </TouchableOpacity>
-    );
+      return (
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => navigation.navigate('Detail', { spot: item })}
+          activeOpacity={0.9}
+        >
+          <Image 
+            source={imageSource} 
+            style={styles.cardImage}
+            onError={(error) => console.warn('Image load error:', item.name, error)}
+          />
+          <View style={styles.cardContent}>
+            <Text style={styles.cardTitle}>{item.name}</Text>
+            <Text style={styles.cardLocation} numberOfLines={1}>📍 {item.address}</Text>
+          </View>
+        </TouchableOpacity>
+      );
+    } catch (error) {
+      console.error('Error rendering spot item:', item.name, error);
+      return null;
+    }
   };
 
   return (
     <View style={styles.container}>
       <View style={styles.mapContainer}>
-        <MapViewComponent spots={sortedSpots} />
+        <MapViewComponent spots={mapSpots} />
       </View>
       <FlatList
-        data={sortedSpots}
+        data={listSpots}
         renderItem={renderItem}
         keyExtractor={(item, index) => item.name || String(index)} // Use name or index as key since id is missing
         contentContainerStyle={styles.listContent}
+        initialNumToRender={10}
+        windowSize={5}
+        removeClippedSubviews
       />
     </View>
   );

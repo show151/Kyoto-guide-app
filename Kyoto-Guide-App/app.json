@@ -7,28 +7,56 @@
     "icon": "./assets/images/kyotoicon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "splash": {
       "image": "./assets/images/kyotoicon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.kyotoguide.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "このアプリは現在地を使って近くの京都スポットを表示します。",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "このアプリは現在地を使って近くの京都スポットを表示します。",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.kyotoguide.app",
+      "minSdkVersion": 28,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/kyotoicon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "favicon": "./assets/images/kyotoicon.png",
-      "bundler": "metro"
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
     },
     "plugins": [
-      "expo-audio"
-    ]
+      "expo-audio",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "このアプリは現在地を使って近くの京都スポットを表示します。"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "65908c9d-9bb7-4f99-b044-6e9c8d70ebe0"
+      }
+    }
   }
 }
