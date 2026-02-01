@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 13.2.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": false
+      },
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_ANDROID_MIN_SDK_VERSION": "28"
+        }
+      }
+    },
+    "production": {
+      "ios": {
+        "simulator": false
+      },
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease",
+        "env": {
+          "EXPO_ANDROID_MIN_SDK_VERSION": "28"
+        }
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

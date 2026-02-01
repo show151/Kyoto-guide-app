@@ -16,23 +16,20 @@ interface SpotMarkerProps {
 }
 
 export default function SpotMarker({ spot, onPress }: SpotMarkerProps) {
+  // locationプロパティが存在しない、または不正な場合は何も表示しない
+  if (!spot.location || typeof spot.location.latitude !== 'number' || typeof spot.location.longitude !== 'number') {
+    console.warn('Invalid spot location:', spot.name);
+    return null;
+  }
+
   return (
     <Marker
       key={spot.name}
       coordinate={{ latitude: spot.location.latitude, longitude: spot.location.longitude }}
       title={spot.name}
       description={spot.description}
-    >
-      <Callout tooltip onPress={() => onPress && onPress(spot)}>
-        <View style={styles.callout}>
-          <Text style={styles.title}>{spot.name}</Text>
-          <Text style={styles.description}>{spot.description}</Text>
-          <TouchableOpacity style={styles.button} onPress={() => onPress && onPress(spot)}>
-            <Text style={styles.buttonText}>詳細</Text>
-          </TouchableOpacity>
-        </View>
-      </Callout>
-    </Marker>
+      tracksViewChanges={false}
+    />
   );
 }
 

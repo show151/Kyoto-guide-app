@@ -54,15 +54,20 @@ export function getSpotImage(filename: string) {
  * @returns { uri: string } または require()の戻り値
  */
 export function resolveImageSource(imageSource: string | undefined) {
-  if (!imageSource) {
+  try {
+    if (!imageSource) {
+      return placeholderImage;
+    }
+
+    // URLの場合はそのまま返す
+    if (imageSource.startsWith('http://') || imageSource.startsWith('https://')) {
+      return { uri: imageSource };
+    }
+
+    // ローカルファイル名の場合
+    return getSpotImage(imageSource);
+  } catch (error) {
+    console.error('Error resolving image source:', error);
     return placeholderImage;
   }
-
-  // URLの場合はそのまま返す
-  if (imageSource.startsWith('http://') || imageSource.startsWith('https://')) {
-    return { uri: imageSource };
-  }
-
-  // ローカルファイル名の場合
-  return getSpotImage(imageSource);
 }

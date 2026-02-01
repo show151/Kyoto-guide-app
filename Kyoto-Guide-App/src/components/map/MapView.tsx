@@ -20,27 +20,26 @@ export default function MapViewComponent({ spots, distanceThreshold = 50, google
   useEffect(() => {
     if (!mapRef.current) return;
 
+    // マーカー数が少ないときだけfitToCoordinatesを実行
     const coordinates = spots
+      .filter((spot) => spot.location && typeof spot.location.latitude === 'number' && typeof spot.location.longitude === 'number')
       .map((spot) => ({
         latitude: spot.location.latitude,
         longitude: spot.location.longitude,
-      }))
-      .filter((coord) => typeof coord.latitude === 'number' && typeof coord.longitude === 'number');
+      }));
 
-    if (currentLocation) {
-      coordinates.push({
-        latitude: currentLocation.coords.latitude,
-        longitude: currentLocation.coords.longitude,
-      });
+    // 3個以上10個以下の場合だけズームを実行（重い処理を減らす）
+    if (coordinates.length > 3 && coordinates.length <= 10) {
+      try {
+        mapRef.current.fitToCoordinates(coordinates, {
+          edgePadding: { top: 40, right: 40, bottom: 40, left: 40 },
+          animated: false,
+        });
+      } catch (error) {
+        console.error('Error fitting to coordinates:', error);
+      }
     }
-
-    if (coordinates.length > 0) {
-      mapRef.current.fitToCoordinates(coordinates, {
-        edgePadding: { top: 40, right: 40, bottom: 40, left: 40 },
-        animated: true,
-      });
-    }
-  }, [spots, currentLocation]);
+  }, [spots]);
 
   return (
     <View style={{ flex: 1 }}>
@@ -58,6 +57,7 @@ export default function MapViewComponent({ spots, distanceThreshold = 50, google
             key="currentLocation"
             coordinate={{ latitude: currentLocation.coords.latitude, longitude: currentLocation.coords.longitude }}
             title="現在地"
+            tracksViewChanges={false}
           />
         )}
       </MapView>

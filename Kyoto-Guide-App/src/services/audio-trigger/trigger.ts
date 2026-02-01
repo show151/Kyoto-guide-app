@@ -15,8 +15,13 @@ import { hasPlayed, markPlayed } from './state';
 
 export function useAudioPlayback(currentLocation: Location.LocationObject | null, spots: Spot[], distanceThreshold: number) {
   useEffect(() => {
-    if (currentLocation) {
-      spots.forEach(spot => {
+    if (!currentLocation) return;
+    
+    // オーディオ処理は最初の20件のスポットだけに限定して軽量化
+    const limitedSpots = spots.slice(0, 20);
+    
+    limitedSpots.forEach(spot => {
+      try {
         // production Spot 型は location: { latitude, longitude }
         const lat = (spot as any).location?.latitude ?? (spot as any).lat;
         const lng = (spot as any).location?.longitude ?? (spot as any).lng;
@@ -36,7 +41,9 @@ export function useAudioPlayback(currentLocation: Location.LocationObject | null
             markPlayed(spot.name);
           }
         }
-      });
-    }
+      } catch (error) {
+        console.error('Error in audio playback:', error);
+      }
+    });
   }, [currentLocation, spots, distanceThreshold]);
 }
