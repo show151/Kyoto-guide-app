@@ -18,3 +18,7 @@
  * 例:
  * - checkAndPlay(currentLocation, spots)
  */
+
+export { useAudioPlayback } from './trigger';
+export { playAudio } from './player';
+export { hasPlayed, markPlayed, resetPlayed, getPlayedCount } from './state';
