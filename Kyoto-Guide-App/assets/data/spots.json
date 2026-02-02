@@ -293,8 +293,7 @@
     "images": [
       "画像"
     ],
-    "thumbnail-img": "kyohaku.jpg",
-    "audioFile": "voice1-09.m4a"
+    "thumbnail-img": "kyohaku.jpg"
   },
   {
     "name": "日の出湯",
@@ -326,7 +325,7 @@
       "画像"
     ],
     "thumbnail-img": "hinodeyu.jpg",
-    "audioFile": "voice1-10.m4a"
+    "audioFile": "voice1-09.m4a"
   },
   {
     "name": "京都デニム",
@@ -360,7 +359,7 @@
       "画像"
     ],
     "thumbnail-img": "kyoto-denim.jpg",
-    "audioFile": "voice1-11.m4a"
+    "audioFile": "voice1-10.m4a"
   },
   {
     "name": "柳原銀行記念資料館",
@@ -392,7 +391,7 @@
       "画像"
     ],
     "thumbnail-img": "yanagiharaginko.jpg",
-    "audioFile": "voice1-12.m4a"
+    "audioFile": "voice1-11.m4a"
   },
   {
     "name": "蘇嶐窯",
@@ -426,7 +425,7 @@
       "画像"
     ],
     "thumbnail-img": "soryu-gama.jpg",
-    "audioFile": "voice1-13.m4a"
+    "audioFile": "voice1-12.m4a"
   },
   {
     "name": "京都文化博物館",
